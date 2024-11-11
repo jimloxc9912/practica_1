@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Página Web con Formularios, Imágenes, Listas y Tablas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Puedes enlazar una hoja de estilo -->
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section id="inicio">
+            <h2>Introducción</h2>
+            <p>Bienvenidos a nuestra página web. Aquí puedes obtener más información sobre nuestros productos, servicios y contacto.</p>
+            <img src="/imagenes/bienvenida.jpg" alt="Imagen de bienvenida" width="500">
+        </section>
+S
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Ofrecemos los siguientes servicios:</p>
+            <ul>
+                <li>Desarrollo Web</li>
+                <li>Consultoría Tecnológica</li>
+                <li>Soporte Técnico</li>
+                <li>Diseño Gráfico</li>
+            </ul>
+            <img src="servicios.jpg" alt="Imagen de servicios" width="500">
+        </section>
+
+        <section id="productos">
+            <h2>Productos</h2>
+            <p>Estos son algunos de nuestros productos más vendidos:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td>$199</td>
+                        <td>Descripción del producto 1.</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td>$299</td>
+                        <td>Descripción del producto 2.</td>
+                    </tr>
+                    <tr>
+                        <td>Producto 3</td>
+                        <td>$399</td>
+                        <td>Descripción del producto 3.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img src="productos.jpg" alt="Imagen de productos" width="500">
+        </section>
+
+       
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o deseas más información, por favor completa el siguiente formulario:</p>
+
+            <form action="/enviarFormulario" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
